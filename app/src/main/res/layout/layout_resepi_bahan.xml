@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Bahan A"
+        android:id="@+id/tvBahanDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009EFF"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="20dp"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:text="nama bahan"
+            android:id="@+id/tvBahanName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

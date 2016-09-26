@@ -1,0 +1,352 @@
+<resources>
+    <string name="app_name">Onebook Resepi 2016</string>
+    <string name="onebook_web">www.onebook.com.my</string>
+    <string name="app_email">onepage2u@gmail.com</string>
+    <string name="tentangkami_info">\"Pelopor buku resepi Android terunggul di Malaysia.\"</string>
+    <string name="app_version">Version 1.0/2016</string>
+
+    <!-- cabutan bertuah -->
+    <string name="cabutan_bertuah">
+        Daftar maklumat peribadi anda untuk menyertai cabutan bertuah.\n
+        Semua ruang wajib diisi.
+    </string>
+    <string name="cabutan_bertuah_warning">
+        Pendaftaran hanya boleh dilakukan sekali sahaja\n\n
+        Hadiah pemenang hanya dihantar ke alamat Malaysia sahaja.
+    </string>
+    <string name="cabutan_registered">
+        Terima kasih kerana menyertai cabutan bertuah ini.\n\n
+        Pendaftaran hanya boleh dibuat sekali sahaja untuk setiap aplikasi Onebook Resepi 2016.
+    </string>
+
+    <string-array name="drawerMenu">
+        <item>Home</item>
+        <item>Tips Masakan</item>
+        <item>Favorite</item>
+
+        <!-- <KATEGORI MAKANAN> -->
+        <item>Rempah Ratus</item>
+        <item>Sup</item>
+        <item>Ayam</item>
+        <item>Daging</item>
+        <item>Ikan</item>
+        <item>Seafood</item>
+        <item>Telur</item>
+        <item>Bubur</item>
+        <item>Kek</item>
+        <item>Kuih Raya</item>
+        <item>Mi &amp; Laksa</item>
+        <item>Minuman</item>
+        <item>Nasi</item>
+        <item>Dessert</item>
+        <item>Puding</item>
+        <item>Makanan Ringan</item>
+        <item>Sos &amp; Sambal</item>
+        <item>Sayur-Sayuran</item>
+        <item>Antarabangsa</item>
+
+        <item>Cabutan</item>
+        <item>Tentang Kami</item>
+    </string-array>
+    <array name="ikonDrawerMenu">
+        <item>@drawable/ic_home_black_100</item>
+        <item>@drawable/ic_info_outline_black_100</item>
+        <item>@drawable/ic_star_black_100</item>
+        <item>@drawable/ic_menu_rempah_ratus_100</item>
+        <item>@drawable/ic_menu_soup_100</item>
+        <item>@drawable/ic_menu_ayam_100</item>
+        <item>@drawable/ic_menu_daging_100</item>
+        <item>@drawable/ic_menu_ikan_100</item>
+        <item>@drawable/ic_menu_seafood_100</item>
+        <item>@drawable/ic_menu_telur_100</item>
+        <item>@drawable/ic_menu_bubur_100</item>
+        <item>@drawable/ic_menu_kek_100</item>
+        <item>@drawable/ic_menu_kuih_raya_100</item>
+        <item>@drawable/ic_menu_mi_laksa_100</item>
+        <item>@drawable/ic_menu_minuman_100</item>
+        <item>@drawable/ic_menu_nasi_100</item>
+        <item>@drawable/ic_menu_dessert_100</item>
+        <item>@drawable/ic_menu_puding_100</item>
+        <item>@drawable/ic_menu_makanan_ringan_100</item>
+        <item>@drawable/ic_menu_sos_sambal_100</item>
+        <item>@drawable/ic_menu_sayur_sayuran_100</item>
+        <item>@drawable/ic_menu_antarabangsa_100</item>
+        <item>@drawable/ic_stars_black_100</item>
+        <item>@drawable/ic_info_black_100</item>
+    </array>
+
+    <string-array name="kategoriResepi">
+        <item>Rempah Ratus</item>
+        <item>Sup</item>
+        <item>Ayam</item>
+        <item>Daging</item>
+        <item>Ikan</item>
+        <item>Seafood</item>
+        <item>Telur</item>
+        <item>Bubur</item>
+        <item>Kek</item>
+        <item>Kuih Raya</item>
+        <item>Mi &amp; Laksa</item>
+        <item>Minuman</item>
+        <item>Nasi</item>
+        <item>Dessert</item>
+        <item>Puding</item>
+        <item>Makanan Ringan</item>
+        <item>Sos &amp; Sambal</item>
+        <item>Sayur-Sayuran</item>
+        <item>Antarabangsa</item>
+    </string-array>
+    <array name="imejKategoriResepi">
+        <item>@drawable/rempah_ratus</item>
+        <item>@drawable/sup</item>
+        <item>@drawable/ayam</item>
+        <item>@drawable/daging</item>
+        <item>@drawable/ikan</item>
+        <item>@drawable/seafood</item>
+        <item>@drawable/telur</item>
+        <item>@drawable/bubur</item>
+        <item>@drawable/kek</item>
+        <item>@drawable/kuih_raya</item>
+        <item>@drawable/mi_laksa</item>
+        <item>@drawable/minuman</item>
+        <item>@drawable/nasi</item>
+        <item>@drawable/dessert</item>
+        <item>@drawable/puding</item>
+        <item>@drawable/makanan_ringan</item>
+        <item>@drawable/sos_sambal</item>
+        <item>@drawable/sayuran</item>
+        <item>@drawable/antarabangsa</item>
+    </array>
+
+    <array name="rempah_list">
+        <item>@drawable/asam_jawa</item>
+        <item>@drawable/bawang_besar</item>
+        <item>@drawable/bawang_merah</item>
+        <item>@drawable/bawang_putih</item>
+        <item>@drawable/belacan</item>
+        <item>@drawable/buah_keras</item>
+        <item>@drawable/buah_pelaga</item>
+        <item>@drawable/bunga_kantan</item>
+        <item>@drawable/bunga_lawang</item>
+        <item>@drawable/cengkih</item>
+        <item>@drawable/daun_bawang</item>
+        <item>@drawable/daun_kari</item>
+        <item>@drawable/daun_kesum</item>
+        <item>@drawable/daun_ketumbar</item>
+        <item>@drawable/daun_limau_purut</item>
+        <item>@drawable/daun_pandan</item>
+        <item>@drawable/daun_pasrley</item>
+        <item>@drawable/daun_pudina</item>
+        <item>@drawable/daun_salam</item>
+        <item>@drawable/daun_selasih</item>
+        <item>@drawable/daun_sup</item>
+        <item>@drawable/halba</item>
+        <item>@drawable/halia</item>
+        <item>@drawable/jintan_manis</item>
+        <item>@drawable/jintan_putih</item>
+        <item>@drawable/kayu_manis</item>
+        <item>@drawable/ketumbar</item>
+        <item>@drawable/kunyit</item>
+        <item>@drawable/lada_hitam</item>
+        <item>@drawable/lemon</item>
+        <item>@drawable/lengkuas</item>
+        <item>@drawable/limau_kasturi</item>
+        <item>@drawable/limau_nipis</item>
+        <item>@drawable/limau_purut</item>
+        <item>@drawable/serai</item>
+    </array>
+
+    <array name="tipsMasakan_title">
+        <item>
+            <b>Tips Melembutkan Ayam Kampung</b>
+        </item>
+        <item>
+            <b>Telur Rebus Senang Dikupas</b>
+        </item>
+        <item>
+            <b>Merasa Garam Dalam Masakan</b>
+        </item>
+        <item>
+            <b>Hilangkan Gatal Sulur Keladi</b>
+        </item>
+        <item>
+            <b>Menyegarkan Sayuran</b>
+        </item>
+        <item>
+            <b>Mencuci Kerang Dengan Mudah</b>
+        </item>
+        <item>
+            <b>Jemput-jemput Sentiasa Lembut</b>
+        </item>
+        <item>
+            <b>Menghilangkan Pahit Peria</b>
+        </item>
+        <item>
+            <b>Tauhu Tidak Melekat Dikuali</b>
+        </item>
+        <item>
+            <b>Membersihkan Perut Lembu</b>
+        </item>
+        <item>
+            <b>Segarkan Taugeh</b>
+        </item>
+        <item>
+            <b>Hilangkan Kesan Bau Papan Pemotong</b>
+        </item>
+        <item>
+            <b>Masakan Termasin</b>
+        </item>
+        <item>
+            <b>Merasa Makanan di Bulan Puasa</b>
+        </item>
+        <item>
+            <b>Memutih Nasi</b>
+        </item>
+        <item>
+            <b>Memasak Nasi yang Mentah</b>
+        </item>
+        <item>
+            <b>Mengelakkan Nasi Hangit</b>
+        </item>
+        <item>
+            <b>Mengelakkan Bau Hangit Nasi</b>
+        </item>
+        <item>
+            <b>Nasi Lambat Basi</b>
+        </item>
+        <item>
+            <b>Nasi Lembik</b>
+        </item>
+        <item>
+            <b>Menyukat Air Untuk Beras</b>
+        </item>
+        <item>
+            <b>Memilih Telur</b>
+        </item>
+        <item>
+            <b>Mengelakkan Telur Rebus Pecah</b>
+        </item>
+        <item>
+            <b>Cara Menghilangkan Bau Hamis Daging Kambing atau Hanyir Ikan</b>
+        </item>
+        <item>
+            <b>Menanggalkan Kerak</b>
+        </item>
+        <item>
+            <b>Mengelakkan Pedih Mata Ketika Mengupas Bawang</b>
+        </item>
+    </array>
+
+    <array name="tipsMasakan_desc">
+        <item>
+            Masukkan empat biji kurma ke dalam masakan ayam kampong. Bila masak daging ayam akan
+            menjadi lembut.
+        </item>
+        <item>
+            Cara mudah lain ialah telur yang telah direbus di rendam di dalam air. Kemudian barulah
+            dikupas.
+        </item>
+        <item>
+            Titiskan kuah di atas jari anda. Jika kuah itu tidak meleleh, ini menandakan masakan
+            anda itu cukup masinnya. Tetapi jika jari anda terasa perit, ini bermakna masakan anda
+            itu terlebih garamnya.
+        </item>
+        <item>
+            Setelah dibersihkan, celurkan sulur keladi dengan air asam jawa dan sedikit garam.
+            Kemudian bolehlah dimasak mengikut citarasa anda.
+        </item>
+        <item>
+            Sayuran kalau disimpan didalam peti ais beberapa hari, kesegarannya akan hilang. Untuk
+            mengembalikan kesegarannya, rendam sayur tadi didalam air yang dicampur cuka selama
+            beberapa minit. Selain mengembalikan kesegaran, cuka juga akan menghilangkan kotoran
+            pada sayur.
+        </item>
+        <item>
+            Masukkan hampas kelapa bersama kerang didalam besen dan gaulkan bersama sedikit air.
+            Tunggu beberapa ketika dan hasilnya kerang tadi akan bersih dan putih.
+        </item>
+        <item>
+            Bancuh adunan jemput-jemput dengan air suam. Kemudian goreng seperti biasa. Hasilnya
+            jemput-jemput anda akan sentiasa lembut, walaupun setelah ianya sejuk.
+        </item>
+        <item>
+            Untuk menghilangkan pahit peria, cuba potong peria dan rendam didalam air berisi garam
+            halus. Setelah lebih kurang 25 minit, toskan dan sedia untuk dimasak.
+        </item>
+        <item>
+            Tauhu akan melekat jika digoreng. Taburkan garam halus pada permukaan atas dan bawah
+            tauhu sebelum digoreng. Hasilnya, tauhu tidak melekat lagi.
+        </item>
+        <item>
+            Untuk memutihkan perut lembu, rendam dan gaulkannya dengan bancuhan kapur sirih berserta
+            rincikan daun pisang atau daun lalang. Lakukan beberapa ketika sebelum dibilas dengan
+            air bersih.
+        </item>
+        <item>
+            Taugeh akan menjadi segar walaupun berhari-hari sekiranya anda mencampurkan perahan air
+            limau nipis ke dalam air tempat anda merendamkan taugeh. Tetapi pastikan anda menukar
+            airnya setiap hari.
+        </item>
+        <item>
+            Ambil sebiji limau nipis dan kemudian di potong dua. Sapukan limau tersebut pada
+            permukaan papan pemotong. Hasilnya bau yang terdapat pada papan pemotong akan hilang.
+        </item>
+        <item>
+            Potong dua atau tiga biji kentang berbentuk dadu. Masukkan ke dalam masakan termasin.
+            Setelah kentang itu lembut, keluarkannya semula.
+        </item>
+        <item>
+            Letakkan setitik kuah di atas kuku ibu jari tangan anda. Jika didapati bulatan itu
+            berbentuk kecil dan kemas bermakna telah cukup rasanya. Jika kuah tersebut tidak
+            meleleh, tandanya sudah cukup manis
+        </item>
+        <item>
+            Letakkan satu sudu kecil air limau nipis pada nasi yang hendak dimasak.
+        </item>
+        <item>
+            Isi air di dalam cawan dan letakkan di dalam periuk yang berisi nasi. Tutup periuk dan
+            perlahankan api hingga nasi masak.
+        </item>
+        <item>
+            Sebelum memasak nasi, masukkan satu sudu kecil marjerin ke dalam periuk.
+        </item>
+        <item>
+            Masukkan beberapa tangkai cili kering dan tutup dengan daun pisang. Bau hangit akan
+            hilang.
+        </item>
+        <item>
+            Ketika menanak nasi, masukkan dua hingga tiga kuntum bunga cengkih beserta secubit garam
+            halus.
+            Basuh beras hingga beras kelihatan putih. Masukkan air dan barulah ditanak seperti
+            biasa.
+        </item>
+        <item>
+            Masukkan dua bij telur ayam ke dalam periuk nasi. Biarkan seketika, hasilnya nasi akan
+            kering dengan sempurna.
+        </item>
+        <item>
+            Basuh beras seperti biasa. Masukkan ke dalam periuk. Sukat beras tersebut dengan jari.
+            Kemudian masukkan air pula yang jumlahnya sukatannya sama dengan sukatan beras.
+        </item>
+        <item>
+            Pilihlah yang segar dan tidak retak. Kulitnya kesat. Apabila digoncang dalamnya padat.
+        </item>
+        <item>
+            Didihkan dahulu air dengan garam. Masukkan telur ke dalam plastik yang berlubang atau
+            bekas plastik yang berlubang sebelum memasukkan bekas atau plastik ke dalam periuk.
+        </item>
+        <item>
+            Gaul daging atau ikan dengan tepung gandum. Rendam sebentar dalam 10 minit. Bilaskan dan
+            tos.
+        </item>
+        <item>
+            Caranya, rebus kulit kentang di dalam bekas yang mengandungi kerak tersebut selama
+            beberapa minit. Setelah air panas, kerak tersebut akan tanggal dengan sendirinya.
+        </item>
+        <item>
+            Simpan bawang yang hendak dikupas di dalam peti sejuk beberapa jam sebelum digunakan.
+            Atau rendam dahulu bawang didalam air sebelum dikupas atau mengupas bawang di dalam
+            rendaman air.
+        </item>
+    </array>
+</resources>

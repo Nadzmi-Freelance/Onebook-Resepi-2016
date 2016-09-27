@@ -13,6 +13,7 @@ public class Resepi {
     private String name, ringkasan;
     private Bitmap resepiImg;
     private String[] langkah;
+    private boolean favourite;
     private ArrayList<Pair<String, String>> bahan;
 
     // constructors
@@ -24,6 +25,18 @@ public class Resepi {
         this.resepiImg = resepiImg; // resepi img
         this.langkah = langkah; // resepi langkah
         this.bahan = bahan; // resepi bahan pair -> bahanDesc:bahanName
+        favourite = false;
+    }
+
+    public Resepi(int id, String name, String ringkasan, int category, Bitmap resepiImg, String[] langkah, ArrayList<Pair<String, String>> bahan, boolean favorite) {
+        this.id = id; // resepi id
+        this.name = name; // resepi category
+        this.ringkasan = ringkasan; // resepi name
+        this.category = category; // resepi ringkasan
+        this.resepiImg = resepiImg; // resepi img
+        this.langkah = langkah; // resepi langkah
+        this.bahan = bahan; // resepi bahan pair -> bahanDesc:bahanName
+        this.favourite = favorite;
     }
 
     public Resepi(int id, String name, Bitmap resepiImg) {
@@ -46,6 +59,7 @@ public class Resepi {
     public String getRingkasan() { return ringkasan; }
     public Bitmap getResepiImg() { return resepiImg; }
     public String[] getLangkah() { return langkah; }
+    public boolean getFavorite() { return  favourite; }
     public ArrayList<Pair<String, String>> getBahan() { return bahan; }
 
     public void setId(int id) { this.id = id; }
@@ -54,5 +68,6 @@ public class Resepi {
     public void setRingkasan(String ringkasan) { this.ringkasan = ringkasan; }
     public void setResepiImg(Bitmap resepiImg) { this.resepiImg = resepiImg; }
     public void setLangkah(String[] langkah) { this.langkah = langkah; }
+    public void setFavorite(boolean favorite) { this.favourite = favorite; }
     public void setBahan(ArrayList<Pair<String, String>> bahan) { this.bahan = bahan; }
 }

@@ -56,6 +56,7 @@ public class ResepiInfo extends AppCompatActivity implements ILoader, View.OnCli
     // variables
     int resepiId;
     String namaResepi;
+    boolean favorite;
     String[] drawerMenuList;
     ResepiManager resepiManager;
     TabHost.TabSpec tsRingkasan, tsBahan, tsLangkah;
@@ -117,8 +118,21 @@ public class ResepiInfo extends AppCompatActivity implements ILoader, View.OnCli
                 break;
             case R.id.ibFavorite:
                 buttonEffect(ibFavorite);
-                resepiManager.addFavorite(resepiId);
-                Toast.makeText(this, "Added to favorite", Toast.LENGTH_SHORT).show();
+
+                if(favorite) {
+                    resepiManager.removeFavorite(resepiId);
+
+                    ibFavorite.setImageResource(R.drawable.ic_star_black_100);
+                    Toast.makeText(this, "Removed from favorite", Toast.LENGTH_SHORT).show();
+                } else {
+                    resepiManager.addFavorite(resepiId);
+
+                    ibFavorite.setImageResource(R.drawable.ic_star_border_purple_24dp);
+                    Toast.makeText(this, "Added to favorite", Toast.LENGTH_SHORT).show();
+                }
+                favorite = !favorite;
+
+                ibFavorite.invalidate();
                 break;
             case R.id.ibShare:
                 buttonEffect(ibShare);
@@ -168,7 +182,13 @@ public class ResepiInfo extends AppCompatActivity implements ILoader, View.OnCli
         tvRingkasan.setText(resepiInfo.getRingkasan());
         lvLangkah.setAdapter(new ResepiLangkahAdapter(this, resepiInfo.getLangkah()));
         lvBahan.setAdapter(new ResepiBahanAdapter(this, resepiInfo.getBahan()));
+        favorite = resepiInfo.getFavorite();
+        if(favorite)
+            ibFavorite.setImageResource(R.drawable.ic_star_border_purple_24dp);
+        else
+            ibFavorite.setImageResource(R.drawable.ic_star_black_100);
 
+        ibFavorite.invalidate();
         lvLangkah.invalidate();
         lvBahan.invalidate();
     }

@@ -249,6 +249,18 @@ public class ResepiProvider extends SQLiteOpenHelper {
         sqliteDB.close();
     }
 
+    public void removeFavorite(int resepiId) {
+        SQLiteDatabase sqliteDB;
+        String sql;
+
+        sqliteDB = SQLiteDatabase.openDatabase(DB_PATH, null, SQLiteDatabase.OPEN_READWRITE); // read sqlite db
+
+        sql = "UPDATE resepi SET resepiFavorite='0' WHERE resepiId LIKE '" + resepiId + "'"; // sql query
+        sqliteDB.execSQL(sql);
+
+        sqliteDB.close();
+    }
+
     public ArrayList<Pair<String, Bitmap>> getFavoriteResepi() {
         ArrayList<Pair<String, Bitmap>> resepiNameWithImgList;
         SQLiteDatabase sqliteDB;
@@ -533,6 +545,7 @@ public class ResepiProvider extends SQLiteOpenHelper {
         String resepiName, resepiRingkasan;
         Bitmap resepiGambar;
         String[] resepiLangkah;
+        boolean resepiFavorite;
         ArrayList<Pair<String, String>> resepiBahan;
 
         sqliteDB = SQLiteDatabase.openDatabase(DB_PATH, null, SQLiteDatabase.OPEN_READWRITE); // read sqlite db
@@ -558,6 +571,10 @@ public class ResepiProvider extends SQLiteOpenHelper {
         resepiCategory = cursor.getInt(cursor.getColumnIndex("resepiCategory"));
         resepiRingkasan = cursor.getString(cursor.getColumnIndex("resepiRingkasan"));
         resepiGambar = byteArrayToBitmap(cursor.getBlob(cursor.getColumnIndex("resepiGambar")), 300, 200);
+        if(cursor.getInt(cursor.getColumnIndex("resepiFavorite")) == 1)
+            resepiFavorite = true;
+        else
+            resepiFavorite = false;
 
         // get langkah info for resepi
         resepiLangkah = new String[cursorLangkah.getCount()];
@@ -588,7 +605,7 @@ public class ResepiProvider extends SQLiteOpenHelper {
         cursorLangkah.close();
         sqliteDB.close();
 
-        return new Resepi(resepiId, resepiName, resepiRingkasan, resepiCategory, resepiGambar, resepiLangkah, resepiBahan);
+        return new Resepi(resepiId, resepiName, resepiRingkasan, resepiCategory, resepiGambar, resepiLangkah, resepiBahan, resepiFavorite);
     }
     // ---------------------------------------------------------------------------------------------
 }

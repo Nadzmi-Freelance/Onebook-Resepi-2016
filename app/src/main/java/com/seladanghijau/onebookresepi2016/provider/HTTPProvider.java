@@ -1,6 +1,9 @@
 package com.seladanghijau.onebookresepi2016.provider;
 
+import android.content.Context;
 import android.util.Pair;
+
+import com.seladanghijau.onebookresepi2016.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -17,21 +20,17 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
-/**
- * Created by seladanghijau on 23/9/2016.
- */
+
 public class HTTPProvider {
     public static final int CODE_SUCCESS = 0;
     public static final int CODE_EXIST = 1;
     public static final int CODE_ERROR = 2;
 
-    private static String DAFTAR_URL = "http://onebook.com.my/php/daftar.php";
-
-    public static HttpURLConnection getServerConnection() throws Exception {
+    public static HttpURLConnection getServerConnection(Context context) throws Exception {
         URL daftarUrl;
         HttpURLConnection httpURLConnection;
 
-        daftarUrl = new URL(DAFTAR_URL);
+        daftarUrl = new URL(context.getResources().getString(R.string.daftar_url));
         httpURLConnection = (HttpURLConnection) daftarUrl.openConnection();
         httpURLConnection.setRequestMethod("POST");
         httpURLConnection.setUseCaches(false);
@@ -48,12 +47,9 @@ public class HTTPProvider {
         BufferedReader bufferedReader;
         BufferedWriter bufferedWriter;
         StringBuffer response;
-        JSONArray jsonArray;
-        JSONObject jsonObject;
         String result;
 
         // initialize
-        result = "\"daftar\":[{\"code\":" + CODE_ERROR + "}]";
         response = new StringBuffer();
 
         // send data

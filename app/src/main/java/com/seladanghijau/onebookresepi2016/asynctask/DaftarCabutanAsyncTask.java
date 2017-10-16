@@ -60,7 +60,7 @@ public class DaftarCabutanAsyncTask extends AsyncTask<Void, Void, String> {
             dataList.add(new Pair<>("nama", nama));
             dataList.add(new Pair<>("noIc", noIc));
 
-            httpURLConnection = HTTPProvider.getServerConnection();
+            httpURLConnection = HTTPProvider.getServerConnection(context);
 
             return HTTPProvider.daftar(httpURLConnection, (ArrayList<Pair<String,String>>) dataList);
         } catch (Exception e) { e.printStackTrace(); }

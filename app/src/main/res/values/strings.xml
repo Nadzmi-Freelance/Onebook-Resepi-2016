@@ -5,6 +5,9 @@
     <string name="tentangkami_info">\"Pelopor buku resepi Android terunggul di Malaysia.\"</string>
     <string name="app_version">Version 1.0/2016</string>
 
+    <!-- server connection -->
+    <string name="daftar_url">http://onebook.com.my/php/daftar.php</string>
+
     <!-- cabutan bertuah -->
     <string name="cabutan_bertuah">
         Daftar maklumat peribadi anda untuk menyertai cabutan bertuah.\n
